@@ -9,7 +9,7 @@ import {
   X,
 } from 'lucide-react'
 
-import logo from '../assets/serveHublogo.png';
+import logo from '../assets/ServeHublogo.png';
 import './Navbar.css'
 
 const locations = {
