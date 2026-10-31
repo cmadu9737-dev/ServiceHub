@@ -126,8 +126,13 @@ function LandingPageScreen() {
             in your community. Fast. Reliable. Local.
           </p>
           <div className="hero-actions">
-            <a href="/services" className="primary-btn">I need a Service <ArrowRight size={18} /></a>
-            <a href="/register" className="secondary-btn"><Users size={17} /> Become a Provider</a>
+            <a href="/signup/customer" className="primary-btn">
+              I need a Service <ArrowRight size={18} />
+            </a>
+
+            <a href="/become-a-member" className="secondary-btn">
+              <Users size={17} /> Become a Provider
+            </a>
           </div>
           <div className="hero-assurance">
             <span><CheckCircle size={16} /> Trusted professionals</span>

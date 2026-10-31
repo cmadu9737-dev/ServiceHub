@@ -1,0 +1,246 @@
+.member-page {
+  background: #ffffff;
+  color: #101a32;
+  min-height: 100vh;
+}
+
+/* HERO SECTION */
+
+.member-hero {
+  background: linear-gradient(135deg, #f3f7fd, #e8f1ff);
+  padding: 85px 20px;
+  text-align: center;
+}
+
+.member-label {
+  color: #0758dc;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  letter-spacing: 2px !important;
+  margin-bottom: 18px !important;
+}
+
+.member-title {
+  color: #101a32;
+  font-weight: 800 !important;
+  font-size: 48px !important;
+  margin-bottom: 20px !important;
+}
+
+.member-title span {
+  color: #0758dc;
+}
+
+.member-description {
+  max-width: 700px;
+  margin: 0 auto 28px !important;
+  color: #64748b;
+  font-size: 16px !important;
+  line-height: 1.8 !important;
+}
+
+.member-main-button {
+  background: #0758dc !important;
+  padding: 13px 25px !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  text-transform: none !important;
+}
+
+.member-main-button:hover,
+.account-button:hover {
+  background: #0647b3 !important;
+}
+
+/* MAIN CONTENT */
+
+.member-content {
+  padding-top: 65px;
+  padding-bottom: 60px;
+}
+
+.member-section-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.member-section-heading h4 {
+  font-weight: 750;
+  color: #101a32;
+  margin-bottom: 12px;
+}
+
+.member-section-heading p {
+  color: #64748b;
+}
+
+/* BENEFIT CARDS */
+
+.benefit-card {
+  height: 100%;
+  border: 1px solid #e5eaf2;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 15px rgba(16, 26, 50, 0.04) !important;
+}
+
+.benefit-card .MuiCardContent-root {
+  padding: 28px;
+}
+
+.benefit-icon {
+  color: #0758dc;
+  font-size: 38px !important;
+  margin-bottom: 15px;
+}
+
+.benefit-card h6 {
+  font-weight: 700;
+  color: #101a32;
+  margin-bottom: 10px;
+}
+
+.benefit-card p {
+  color: #64748b;
+  line-height: 1.7;
+}
+
+/* ACCOUNT TYPE CARDS */
+
+.account-heading {
+  margin-top: 85px;
+}
+
+.account-card {
+  height: 100%;
+  border: 1px solid #e5eaf2;
+  border-radius: 14px !important;
+  box-shadow: 0 5px 20px rgba(16, 26, 50, 0.05) !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.account-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(16, 26, 50, 0.1) !important;
+}
+
+.account-card .MuiCardContent-root {
+  padding: 32px;
+}
+
+.account-icon {
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.account-icon svg {
+  font-size: 30px;
+}
+
+.customer-icon {
+  background: #eaf2ff;
+  color: #0758dc;
+}
+
+.provider-icon {
+  background: #eaf2ff;
+  color: #0758dc;
+}
+
+.account-card h5 {
+  color: #101a32;
+  font-weight: 750;
+  margin-bottom: 14px;
+}
+
+.account-description {
+  color: #64748b;
+  line-height: 1.8 !important;
+  min-height: 75px;
+}
+
+.account-features {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  margin: 25px 0;
+}
+
+.account-features p {
+  color: #334155;
+  font-size: 14px;
+}
+
+.account-button {
+  background: #0758dc !important;
+  padding: 13px !important;
+  border-radius: 8px !important;
+  text-transform: none !important;
+  font-weight: 600 !important;
+}
+
+/* BOTTOM SECTION */
+
+.member-bottom {
+  text-align: center;
+  background: #101a32;
+  color: white;
+  padding: 55px 25px;
+  margin-top: 85px;
+  border-radius: 16px;
+}
+
+.bottom-icon {
+  font-size: 45px !important;
+  color: #60a5fa;
+  margin-bottom: 15px;
+}
+
+.member-bottom h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.member-bottom p {
+  color: #cbd5e1;
+  max-width: 650px;
+  margin: 0 auto 25px;
+  line-height: 1.8;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 600px) {
+  .member-hero {
+    padding: 60px 15px;
+  }
+
+  .member-title {
+    font-size: 34px !important;
+  }
+
+  .member-description {
+    font-size: 14px !important;
+  }
+
+  .member-content {
+    padding-top: 45px;
+  }
+
+  .account-heading {
+    margin-top: 60px;
+  }
+
+  .account-card .MuiCardContent-root {
+    padding: 24px;
+  }
+
+  .member-bottom {
+    padding: 40px 20px;
+    margin-top: 60px;
+  }
+}

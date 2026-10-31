@@ -1,0 +1,165 @@
+
+.signup-page {
+  min-height: 100vh;
+  background: #f3f7fd;
+  padding: 75px 20px;
+  color: #101a32;
+}
+
+.signup-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 50px;
+}
+
+.signup-eyebrow {
+  color: #0758dc;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  letter-spacing: 2px !important;
+  margin-bottom: 15px !important;
+}
+
+.signup-title {
+  font-weight: 800 !important;
+  color: #101a32;
+  margin-bottom: 18px !important;
+}
+
+.signup-subtitle {
+  color: #64748b;
+  font-size: 16px !important;
+  line-height: 1.8 !important;
+}
+
+.signup-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.signup-card {
+  height: 100%;
+  border: 1px solid #e1e8f2;
+  border-radius: 16px !important;
+  box-shadow: 0 8px 30px rgba(16, 26, 50, 0.06) !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.signup-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(16, 26, 50, 0.1) !important;
+}
+
+.signup-card .MuiCardContent-root {
+  padding: 35px;
+}
+
+.signup-icon {
+  width: 65px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  margin-bottom: 25px;
+}
+
+.signup-icon svg {
+  font-size: 34px;
+}
+
+.customer-signup-icon,
+.provider-signup-icon {
+  background: #eaf2ff;
+  color: #0758dc;
+}
+
+.signup-card-title {
+  color: #101a32;
+  font-weight: 750 !important;
+  margin-bottom: 15px !important;
+}
+
+.signup-card-description {
+  color: #64748b;
+  line-height: 1.8 !important;
+  min-height: 85px;
+}
+
+.signup-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  margin: 28px 0;
+}
+
+.signup-benefits p {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #334155;
+  font-size: 14px;
+}
+
+.signup-benefits svg {
+  color: #0758dc;
+  font-size: 19px;
+}
+
+.signup-button {
+  background: #0758dc !important;
+  padding: 14px !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  text-transform: none !important;
+}
+
+.signup-button:hover {
+  background: #0647b3 !important;
+}
+
+.signup-footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #64748b;
+}
+
+.signup-footer a {
+  color: #0758dc;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.signup-footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  .signup-page {
+    padding: 50px 15px;
+  }
+
+  .signup-title {
+    font-size: 32px !important;
+  }
+
+  .signup-subtitle {
+    font-size: 14px !important;
+  }
+
+  .signup-cards {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .signup-card .MuiCardContent-root {
+    padding: 26px;
+  }
+
+  .signup-card-description {
+    min-height: auto;
+  }
+}

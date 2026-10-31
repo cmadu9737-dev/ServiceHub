@@ -1,0 +1,116 @@
+
+.customer-signup-page {
+  min-height: 100vh;
+  background: #f3f7fd;
+  padding: 65px 15px;
+}
+
+.customer-signup-card {
+  padding: 40px !important;
+  border-radius: 16px !important;
+  border: 1px solid #e5eaf2;
+  box-shadow: 0 8px 35px rgba(16, 26, 50, 0.06) !important;
+}
+
+.customer-signup-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.customer-signup-label {
+  color: #0758dc;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  letter-spacing: 2px !important;
+  margin-bottom: 12px !important;
+}
+
+.customer-signup-heading h4 {
+  color: #101a32;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.customer-signup-heading p {
+  color: #64748b;
+  line-height: 1.7;
+}
+
+.form-section-title {
+  color: #101a32;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  margin-top: 25px !important;
+}
+
+.password-section {
+  margin-top: 30px !important;
+}
+
+.customer-signup-card .MuiTextField-root {
+  margin-top: 13px;
+}
+
+.customer-signup-card .MuiOutlinedInput-root {
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.customer-signup-card .MuiOutlinedInput-root.Mui-focused fieldset {
+  border-color: #0758dc;
+}
+
+.customer-signup-card .MuiInputLabel-root.Mui-focused {
+  color: #0758dc;
+}
+
+.customer-submit-button {
+  background: #0758dc !important;
+  padding: 14px !important;
+  margin-top: 28px !important;
+  border-radius: 8px !important;
+  font-weight: 700 !important;
+  text-transform: none !important;
+}
+
+.customer-submit-button:hover {
+  background: #0647b3 !important;
+}
+
+.customer-signup-footer {
+  text-align: center;
+  margin-top: 28px;
+}
+
+.customer-signup-footer p {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.customer-signup-footer a {
+  color: #0758dc;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.customer-signup-footer a:hover {
+  text-decoration: underline;
+}
+
+.back-link {
+  margin-top: 15px !important;
+}
+
+@media (max-width: 600px) {
+  .customer-signup-page {
+    padding: 30px 12px;
+  }
+
+  .customer-signup-card {
+    padding: 24px !important;
+  }
+
+  .customer-signup-heading h4 {
+    font-size: 27px;
+  }
+}
