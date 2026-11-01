@@ -1,0 +1,314 @@
+
+.service-details-page {
+  min-height: 80vh;
+  padding: 45px 6%;
+  background: #f3f7fd;
+}
+
+.service-details-container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.service-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 25px;
+  color: #0758dc;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.service-details-card {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+.service-details-content,
+.service-provider-card {
+  padding: 35px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 5px 25px rgba(16, 26, 50, 0.06);
+}
+
+.service-details-category {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 20px;
+  background: #e8f0ff;
+  color: #0758dc;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.service-details-content h1 {
+  margin: 20px 0;
+  color: #101a32;
+  font-size: 34px;
+  line-height: 1.25;
+}
+
+.service-details-description {
+  color: #647084;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.service-details-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin: 25px 0;
+}
+
+.service-details-info p,
+.service-provider-contact {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #647084;
+  font-size: 14px;
+}
+
+.service-details-info svg,
+.service-provider-contact svg {
+  flex-shrink: 0;
+  color: #0758dc;
+}
+
+.service-details-price {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 22px;
+  border-radius: 12px;
+  background: #f3f7fd;
+}
+
+.service-details-price span {
+  color: #647084;
+  font-size: 14px;
+}
+
+.service-details-price strong {
+  color: #0758dc;
+  font-size: 27px;
+}
+
+.service-provider-card {
+  text-align: center;
+}
+
+.service-provider-card h2 {
+  margin: 0 0 25px;
+  color: #101a32;
+  font-size: 21px;
+}
+
+.service-provider-avatar,
+.service-provider-avatar-placeholder {
+  width: 95px;
+  height: 95px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+}
+
+.service-provider-avatar {
+  display: block;
+  object-fit: cover;
+}
+
+.service-provider-avatar-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e8f0ff;
+  color: #0758dc;
+}
+
+.service-provider-card h3 {
+  margin: 10px 0 5px;
+  color: #101a32;
+  font-size: 19px;
+}
+
+.service-provider-name {
+  margin: 0 0 20px;
+  color: #647084;
+  font-size: 14px;
+}
+
+.service-provider-contact {
+  justify-content: center;
+  margin: 13px 0;
+  overflow-wrap: anywhere;
+}
+
+.service-provider-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.service-provider-actions a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 13px 16px;
+  border-radius: 9px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.service-whatsapp-button {
+  background: #128c4a;
+  color: #fff;
+}
+
+.service-call-button {
+  background: #e8f0ff;
+  color: #0758dc;
+}
+
+.service-book-button {
+  background: #0758dc;
+  color: #fff;
+}
+
+.service-provider-actions a:hover {
+  opacity: 0.88;
+  transform: translateY(-2px);
+}
+
+.service-details-message,
+.service-details-error {
+  padding: 30px;
+  color: #647084;
+  text-align: center;
+}
+
+.service-details-error {
+  color: #d32f2f;
+}
+
+@media (max-width: 768px) {
+  .service-details-page {
+    padding: 30px 5%;
+  }
+
+  .service-details-card {
+    grid-template-columns: 1fr;
+  }
+
+  .service-details-content,
+  .service-provider-card {
+    padding: 25px 20px;
+  }
+
+  .service-details-content h1 {
+    font-size: 27px;
+  }
+}
+
+/* Booking Form */
+.booking-form {
+  margin-top: 25px;
+  padding: 22px;
+  background: #f3f7fd;
+  border-radius: 12px;
+  text-align: left;
+}
+
+.booking-form h3 {
+  margin: 0 0 8px;
+  color: #101a32;
+  font-size: 20px;
+}
+
+.booking-form > p {
+  color: #647084;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.booking-form label {
+  display: block;
+  margin: 18px 0 8px;
+  color: #101a32;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.booking-date-field {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #dce4f0;
+  border-radius: 8px;
+  color: #0758dc;
+}
+
+.booking-date-field input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font: inherit;
+  color: #101a32;
+}
+
+.booking-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dce4f0;
+  border-radius: 8px;
+  outline: none;
+  resize: vertical;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+.booking-form textarea:focus,
+.booking-date-field:focus-within {
+  border-color: #0758dc;
+}
+
+.booking-form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  width: 100%;
+  margin-top: 20px;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: #0758dc;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.booking-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.booking-error {
+  color: #d32f2f !important;
+}
+
+.booking-success {
+  color: #128c4a !important;
+}

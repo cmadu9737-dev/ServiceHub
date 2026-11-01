@@ -40,7 +40,6 @@ function Login() {
     setLoading(true);
 
     try {
-      // Authenticate the user
       const { data, error: loginError } =
         await supabase.auth.signInWithPassword({
           email: email.trim(),
@@ -49,24 +48,17 @@ function Login() {
 
       if (loginError) throw loginError;
 
-      // Retrieve the user's account role
-      const { data: profile, error: profileError } =
-        await supabase
-          .from("profiles")
-          .select("role")
-          .eq("id", data.user.id)
-          .single();
+      // Confirm that the user's profile exists.
+      const { error: profileError } = await supabase
+        .from("profiles")
+        .select("role")
+        .eq("id", data.user.id)
+        .single();
 
       if (profileError) throw profileError;
 
-      // Redirect according to account type
-      if (profile.role === "customer") {
-        navigate("/customer-dashboard", { replace: true });
-      } else if (profile.role === "provider") {
-        navigate("/provider-dashboard", { replace: true });
-      } else {
-        throw new Error("Your account role could not be identified.");
-      }
+      // Send both customers and providers to the homepage.
+      navigate("/", { replace: true });
     } catch (err) {
       setError(
         err.message || "Login failed. Please check your details."
@@ -80,7 +72,6 @@ function Login() {
     <Box className="login-page">
       <Container maxWidth="sm">
         <Paper elevation={0} className="login-card">
-
           <Box className="login-heading">
             <Typography className="login-label">
               WELCOME BACK TO SERVEHUB
@@ -183,7 +174,6 @@ function Login() {
               </RouterLink>
             </Typography>
           </Box>
-
         </Paper>
       </Container>
     </Box>
