@@ -6,6 +6,7 @@ import {
   ArrowRight, CheckCircle, Star, ShieldCheck, Search, MapPin,
   Mail, Quote, Smartphone, Users, BadgeCheck, CalendarCheck,
 } from 'lucide-react'
+import { Link } from 'react-router-dom';
 
 const categories = [
   { name: 'Tech & Digital', description: 'Websites, apps, graphic design & more', icon: Monitor },
@@ -264,7 +265,7 @@ function LandingPageScreen() {
       <footer className="site-footer">
         <div className="footer-main section-shell">
           <div className="footer-brand"><a href="/" className="footer-logo"><span className="footer-logo-mark"><CheckCircle size={23} /></span>ServeHub</a><p>Nigeria’s trusted marketplace for local services.</p><div className="social-links"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="X">𝕏</a><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="YouTube">▶</a></div></div>
-          <div className="footer-column"><h3>Company</h3><a href="/about">About Us</a><a href="/how-it-works">How It Works</a><a href="/careers">Careers</a><a href="/blog">Blog</a></div>
+          <div className="footer-column"><h3>Company</h3><Link to ="/about">About Us</Link><a href="/how-it-works">How It Works</a><a href="/careers">Careers</a><a href="/blog">Blog</a></div>
           <div className="footer-column"><h3>For Customers</h3><a href="/services">Find Services</a><a href="/help">Help Center</a><a href="/safety">Safety & Trust</a><a href="/terms">Terms & Conditions</a></div>
           <div className="footer-column"><h3>For Providers</h3><a href="/register">Become a Provider</a><a href="/provider-dashboard">Provider Dashboard</a><a href="/success-tips">Success Tips</a><a href="/provider-support">Provider Support</a></div>
           <div className="footer-column footer-trust"><h3>Trust & Safety</h3><span><ShieldCheck size={17} /> Verified Professionals</span><span><ShieldCheck size={17} /> Secure Payments</span><span><Users size={17} /> Local Experts</span></div>
