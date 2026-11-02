@@ -12,6 +12,7 @@ import ProviderDashboard from "./Screen/ProviderDashboard.jsx";
 import ServicesPage from "./Screen/ServicesPage.jsx";
 import ServiceDetails from "./Screen/ServiceDetails.jsx";
 import BookingChat from "./Screen/BookingChat.jsx";
+import AboutUs from "./Screen/AboutUs.jsx";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
 
         <Route path="/provider/:section"  element={<ProviderDashboard />}  />
         <Route path="/booking-chat/:bookingId" element={<BookingChat />} />
+        <Route path="/about" element={<AboutUs/>} />
       </Routes>
     </>
   );
