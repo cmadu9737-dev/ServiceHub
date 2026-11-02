@@ -1,0 +1,285 @@
+/* GENERAL STYLING */
+.how-it-works-page {
+  width: 100%;
+  color: #344054;
+  background-color: #ffffff;
+  font-family: inherit;
+}
+.how-it-works-page * {
+  box-sizing: border-box;
+}
+.how-it-works-page h1,
+.how-it-works-page h2,
+.how-it-works-page h3 {
+  color: #101828;
+}
+.how-it-works-page p {
+  line-height: 1.7;
+  color: #667085;
+}
+/* HERO SECTION */
+.how-hero {
+  min-height: 480px;
+  padding: 90px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  background: linear-gradient(120deg, #eaf2ff, #ffffff);
+}
+.how-hero-content {
+  max-width: 580px;
+}
+.how-subtitle {
+  display: inline-block;
+  color: #0756d9;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 15px;
+}
+.how-hero h1 {
+  font-size: clamp(36px, 5vw, 56px);
+  line-height: 1.15;
+  margin: 0 0 20px;
+  font-weight: 750;
+}
+.how-hero-content p {
+  font-size: 16px;
+  max-width: 520px;
+  margin-bottom: 30px;
+}
+.how-primary-btn,
+.how-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 25px;
+  background-color: #0756d9;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 7px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+.how-primary-btn:hover,
+.how-cta-btn:hover {
+  background-color: #0645ad;
+  transform: translateY(-2px);
+}
+/* HERO VISUAL */
+.how-hero-visual {
+  width: 420px;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #dce9ff;
+  border-radius: 20px;
+  padding: 30px;
+}
+.how-visual-card {
+  width: 100%;
+  padding: 45px 25px;
+  background: #ffffff;
+  border: 1px solid #dce3ed;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(16, 24, 40, 0.08);
+}
+.how-visual-card svg {
+  color: #0756d9;
+  margin-bottom: 15px;
+}
+.how-visual-card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+/* SECTION HEADINGS */
+.how-section-heading {
+  max-width: 650px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+.how-section-heading h2 {
+  font-size: clamp(27px, 4vw, 38px);
+  margin: 0 0 15px;
+  font-weight: 700;
+}
+.how-section-heading p {
+  font-size: 15px;
+}
+/* CUSTOMER STEPS */
+.customer-steps,
+.provider-steps,
+.how-benefits {
+  padding: 90px 8%;
+}
+.how-steps-grid,
+.provider-steps-grid,
+.how-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+.how-step-card,
+.provider-step-card,
+.how-benefit-card {
+  background: #ffffff;
+  border: 1px solid #dce3ed;
+  border-radius: 12px;
+  padding: 28px 23px;
+  box-shadow: 0 5px 18px rgba(16, 24, 40, 0.04);
+  transition: 0.3s ease;
+}
+.how-step-card:hover,
+.provider-step-card:hover,
+.how-benefit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(16, 24, 40, 0.09);
+}
+.how-step-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.how-icon {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eaf2ff;
+  color: #0756d9;
+  border-radius: 10px;
+}
+.how-icon svg {
+  width: 26px;
+  height: 26px;
+  stroke-width: 1.8;
+}
+.how-step-top span {
+  color: #0756d9;
+  font-size: 22px;
+  font-weight: 700;
+}
+.how-step-card h3,
+.provider-step-card h3,
+.how-benefit-card h3 {
+  font-size: 19px;
+  margin: 18px 0 10px;
+}
+.how-step-card p,
+.provider-step-card p,
+.how-benefit-card p {
+  font-size: 14px;
+  margin: 0;
+}
+/* PROVIDER SECTION */
+.provider-steps {
+  background-color: #f8faff;
+}
+.provider-step-card > span {
+  display: block;
+  color: #0756d9;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 22px;
+}
+/* BENEFITS SECTION */
+.how-benefits {
+  background-color: #ffffff;
+}
+.how-benefit-card {
+  text-align: left;
+}
+.how-benefit-card .how-icon {
+  margin-bottom: 20px;
+}
+/* FINAL CTA */
+.how-cta {
+  margin: 20px 8% 80px;
+  padding: 65px 25px;
+  background-color: #0756d9;
+  border-radius: 15px;
+  text-align: center;
+}
+.how-cta h2 {
+  color: #ffffff;
+  font-size: 34px;
+  margin: 0 0 15px;
+}
+.how-cta p {
+  color: #eaf2ff;
+  max-width: 600px;
+  margin: 0 auto 25px;
+}
+.how-cta-btn {
+  background-color: #ffffff;
+  color: #0756d9;
+}
+.how-cta-btn:hover {
+  background-color: #eaf2ff;
+  color: #0645ad;
+}
+/* TABLET RESPONSIVENESS */
+@media (max-width: 1000px) {
+  .how-steps-grid,
+  .provider-steps-grid,
+  .how-benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .how-hero {
+    padding: 70px 6%;
+    gap: 35px;
+  }
+  .how-hero-visual {
+    width: 350px;
+  }
+}
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 650px) {
+  .how-hero {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 65px 6%;
+  }
+  .how-hero-content {
+    width: 100%;
+  }
+  .how-hero-visual {
+    width: 100%;
+    min-height: 230px;
+  }
+  .customer-steps,
+  .provider-steps,
+  .how-benefits {
+    padding: 65px 6%;
+  }
+  .how-steps-grid,
+  .provider-steps-grid,
+  .how-benefits-grid {
+    grid-template-columns: 1fr;
+  }
+  .how-section-heading {
+    margin-bottom: 35px;
+  }
+  .how-section-heading h2 {
+    font-size: 28px;
+  }
+  .how-step-card,
+  .provider-step-card,
+  .how-benefit-card {
+    padding: 25px;
+  }
+  .how-cta {
+    margin: 10px 6% 60px;
+    padding: 50px 22px;
+  }
+  .how-cta h2 {
+    font-size: 27px;
+  }
+}
